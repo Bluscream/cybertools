@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="content"></h2>
+
+<script>
+// Parse the URL
+var url = new URL(window.location.href);
+
+// Get query parameter
+var text = url.searchParams.get("text");
+
+// Decode the text
+var decodedText = decodeURIComponent(text);
+
+// Display the text
+document.getElementById("content").innerHTML = decodedText;
+</script>
+
+</body>
+</html>
